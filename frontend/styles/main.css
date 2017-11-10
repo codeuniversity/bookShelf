@@ -7,23 +7,14 @@ main {
     background-color: sandybrown;
 }
 
-section {
-    display: grid;
-    grid-template-columns:1fr;
-    grid-template-rows: 5vw;
-    grid-auto-rows:75px;
-
+main ul {
     color: black;
     text-shadow: 0 2px 0 rgba(110,133,156,0.18);
-    padding: 0.85em;
-    background: #6e859c;
     border: solid 1px rgba(110,133,156,0.15);
     border-radius: 0.3em;
 }
-     main .item {display: grid;
-        grid-template-columns:1fr;
-        grid-auto-rows: 75px;
-
+     main li {
+        display: flex;
         color: #fff;
         text-shadow: 0 2px 0 rgba(110,133,156,0.18);
         padding: 0.85em;
@@ -31,15 +22,17 @@ section {
         border: solid 1px rgba(110,133,156,0.15);
         border-radius: 0.3em;
     }
+
+main li img {
+    height: 5rem;
+}
+
     .item:nth-child(even) {
             background: #a5cee9;
     }
 
     main .headline {
-        display: grid;
-        grid-auto-rows: minmax(15px,5vw);
-        grid-auto-columns: 1fr;
-        font-size: 5vw;
+        height: 3rem;
     }
 
     main .enditem {
