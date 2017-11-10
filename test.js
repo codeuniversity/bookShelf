@@ -1,12 +1,14 @@
 
 
 // Setting up variables for later use
-let databseBooks;
-let databseUsers;
+let databaseBooks;
+let databaseUsers;
+let databaseLends;
 
 // Save URL for ajax call
 const getBooks = 'https://api.mlab.com/api/1/databases/booklend/collections/Book?apiKey=Dmb80JOwPSsa2sfnvbP7HAOR5eqKGt2A';
 const getUsers = 'https://api.mlab.com/api/1/databases/booklend/collections/User?apiKey=Dmb80JOwPSsa2sfnvbP7HAOR5eqKGt2A';
+const getLends = 'https://api.mlab.com/api/1/databases/booklend/collections/Lends?apiKey=Dmb80JOwPSsa2sfnvbP7HAOR5eqKGt2A';
 
 
 // the URL = placeholder for URL / Callback = placholder for database / asynchronous = false because of code jumping
@@ -41,7 +43,17 @@ function callbackBooks(xhttp) {
 
 function callbackUsers(xhttp) {
     
-      databaseUsers = JSON.parse(xhttp.responseText);
+  databaseUsers = JSON.parse(xhttp.responseText);
+    
+  // database.push(2);
+    
+};
+
+
+
+function callbackLends(xhttp) {
+    
+      databaseLends = JSON.parse(xhttp.responseText);
     
       // database.push(2);
     
@@ -51,13 +63,19 @@ function callbackUsers(xhttp) {
 // function call
 httpGetAsync(getBooks, callbackBooks, false);
 httpGetAsync(getUsers, callbackUsers, false);
+httpGetAsync(getLends, callbackLends, false);
 
 
 
 console.log(databaseBooks);
 console.log(databaseUsers);
+console.log(databaseLends);
 
 console.log(databaseBooks["0"].books["1"].book_author);
+
+
+
+
 
 
 
