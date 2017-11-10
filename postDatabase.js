@@ -4,6 +4,8 @@
 function getInput() {
 
     let userInputName = document.getElementById('user-input-name').value;
+    let userInputLastName = document.getElementById('user-input-lastname').value;
+    let userInputEmail = document.getElementById('user-input-email').value;
     
     $.ajax({
         url: getUsers,
@@ -11,8 +13,8 @@ function getInput() {
         data: JSON.stringify({
             "user_ID"           :       4,
             "first_name"        :       userInputName,
-            "last_name"         :       "Panzer",
-            "email"             :       "kim@beispiel.de"
+            "last_name"         :       userInputLastName,
+            "email"             :       userInputEmail
         }),
         type: 'POST',
         contentType: 'application/json',
