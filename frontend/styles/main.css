@@ -1,0 +1,81 @@
+header {
+    background-color: steelblue;
+    height: 250px;    
+}
+
+main {
+    background-color: sandybrown;
+}
+
+section {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 5vw;
+    grid-auto-rows:75px;
+
+    color: black;
+    text-shadow: 0 2px 0 rgba(110,133,156,0.18);
+    padding: 0.85em;
+    background: #6e859c;
+    border: solid 1px rgba(110,133,156,0.15);
+    border-radius: 0.3em;
+}
+     main .item {display: grid;
+        grid-template-columns:1fr;
+        grid-auto-rows: 75px;
+
+        color: #fff;
+        text-shadow: 0 2px 0 rgba(110,133,156,0.18);
+        padding: 0.85em;
+        background: #6e859c;
+        border: solid 1px rgba(110,133,156,0.15);
+        border-radius: 0.3em;
+    }
+    .item:nth-child(even) {
+            background: #a5cee9;
+    }
+
+    main .headline {
+        display: grid;
+        grid-auto-rows: minmax(15px,5vw);
+        grid-auto-columns: 1fr;
+        font-size: 5vw;
+    }
+
+    main .enditem {
+        display: grid;
+        grid-template-rows:75px;
+        grid-template-columns: 1fr;
+    }
+
+    .recently-added-books {
+            background: #fff;
+        }
+
+    .ID {
+        background: #fff;
+    }
+
+    .SE {
+        background: firebrick;
+    }
+    
+
+    
+nav {
+    background-color: salmon;
+    position: fixed;
+   bottom: 0;
+   width: 100%;
+
+}
+   nav ul {    display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 75px;
+        text-align: center;   
+    }
+    .icon {
+            height: 20px;
+            width: 20px;
+            background-color: whitesmoke;
+    }
