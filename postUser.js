@@ -1,5 +1,5 @@
 
-
+let userSessionID
 
 function getInput() {
 
@@ -12,7 +12,8 @@ function getInput() {
     for (let userCount = 0; userCount < databaseUsers.length; userCount++) {
 
         if (userInputEmail === databaseUsers[userCount].email) {
-            console.log('FOUND EMAIL');
+            console.log('We logged you in');
+            console.log(databaseUsers[userCount]._id.$oid);
             foundEmail = true;
         }
     }
@@ -34,7 +35,6 @@ function postUser(userInputName, userInputLastName, userInputEmail) {
         url: getUsers,
         async: false,
         data: JSON.stringify({
-            "user_ID"           :       4,
             "first_name"        :       userInputName,
             "last_name"         :       userInputLastName,
             "email"             :       userInputEmail

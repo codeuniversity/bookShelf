@@ -28,6 +28,8 @@ function postBook(userInputBookName, userInputBookAuthor, userInputBookDescripti
                 "book_subcategory"   :       userInputBookSubcategory,
                 "book_isbn"          :       userInputBookISBN
 
+                     
+
             }),
             type: 'POST',
             contentType: 'application/json',
