@@ -18,7 +18,7 @@ function getInput() {
     }
 
     if (foundEmail === true) {
-        alert('sry we already got your email');
+        alert('sorry we already got your email');
     
     } else {
         postUser(userInputName, userInputLastName, userInputEmail);

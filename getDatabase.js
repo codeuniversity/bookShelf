@@ -81,40 +81,5 @@ console.log(databaseBooks["0"].books["1"].book_author);
 
 
 
-// Comments and POST cheatSheet
-
-
-/* 
-
-https://www.w3schools.com/xml/ajax_xmlhttprequest_send.asp
-
-
-
-        $.ajax({
-          url: postInvoice,
-          data: JSON.stringify({
-            "invoiceNumber"             : invoiceNumber,
-            "invoiceTotal"              : invoiceTotal,
-            "invoicePrimaryTotalTax"    : invoicePrimaryTotalTax,
-            "invoiceSecondaryTotalTax"  : invoiceSecondaryTotalTax,
-            "invoiceTotalTax"           : invoiceTotalTax,
-            "itemListing"               : itemListing,
-            "invoiceTimeStamp"          : invoiceTimeStamp,
-            "invoiceTimeReadable"       : invoiceTimeReadable,
-            "invoiceDateReadable"       : invoiceDateReadable,
-          }),
-          type: 'POST',
-          contentType: 'application/json',
-          sucess: function(data) {
-          },
-          error: function(xhr, status, err) {
-            console.log(err);
-          }
-        });
-
-
-*/
-
-
 
 
