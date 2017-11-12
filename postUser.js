@@ -1,5 +1,5 @@
 
-let userSessionID
+let userSessionID = 
 
 function getInput() {
 
