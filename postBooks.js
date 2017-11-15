@@ -1,4 +1,7 @@
-
+userID = 123;
+userInputName = "Paul";
+userInputLastName = "Panzer";
+userInputEmail = "Panzer@mail.com";
     
 
 
@@ -13,7 +16,15 @@ function postBook(userInputBookName, userInputBookAuthor, userInputBookDescripti
                 "book_description"   :       userInputBookDescription,
                 "book_category"      :       userInputBookCategory,
                 "book_subcategory"   :       userInputBookSubcategory,
-                "book_isbn"          :       userInputBookISBN                  
+                "book_isbn"          :       userInputBookISBN,   
+                "book_owner"         :      {
+                    
+                 "book_user_id"           :       userID,
+                 "book_owner_name"        :       userInputName,
+                 "book_owner_last_name"   :       userInputLastName,
+                 "book_owner_email"       :       userInputEmail
+                
+                }      
 
             }),
             type: 'POST',
