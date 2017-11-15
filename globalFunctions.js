@@ -11,6 +11,9 @@ let userInputBookISBN;
 let userInputBookName;
 let userInputBookSubcategory;
 
+let bookName;
+let bookListingSection = document.getElementById("book-listing")
+
 
 function getLogin() {
 
@@ -41,12 +44,25 @@ function getBook() {
     userInputBookCategory = document.getElementById('user-input-book-category').value;
     userInputBookSubcategory = document.getElementById('user-input-book-subcategory').value;
     userInputBookISBN = document.getElementById('user-input-book-isbn').value;
+
    
         postBook(userInputBookName, userInputBookAuthor, userInputBookDescription, userInputBookCategory, userInputBookSubcategory, userInputBookISBN)
     }
 
 
+function listBooks() {
 
+    for (let bookCount = 0; bookCount < databaseBooks.length; bookCount++) {
+        bookName = databaseBooks[bookCount].book_name;
+
+        bookListingSection.innerHTML += `<h2>${bookName}</h2>`;
+
+        
+    }
+
+
+
+}
 
 
 

@@ -1,8 +1,3 @@
-userID = 123;
-userInputName = "Paul";
-userInputLastName = "Panzer";
-userInputEmail = "Panzer@mail.com";
-    
 
 
 function postBook(userInputBookName, userInputBookAuthor, userInputBookDescription, userInputBookCategory, userInputBookSubcategory, userInputBookISBN) {

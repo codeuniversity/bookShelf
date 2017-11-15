@@ -71,8 +71,6 @@ console.log(databaseBooks);
 console.log(databaseUsers);
 console.log(databaseLends);
 
-console.log(databaseBooks["0"].books["1"].book_author);
-
 
 
 
