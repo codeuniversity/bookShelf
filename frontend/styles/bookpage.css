@@ -1,0 +1,49 @@
+body{
+    width: 100%;
+    background-color: rgb(10, 3, 5);
+    font-family: Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+header{
+    height: 10rem;
+    background-color: rgb(10, 3, 5);
+
+}
+
+main{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    width: 95%; 
+    height: 5rem;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+h3{
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+}
+
+nav {
+    background-color: salmon;
+    position: fixed;
+   bottom: 0;
+   width: 100%;
+
+}
+   nav ul{    display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 50px;
+        text-align: center;   
+    }
