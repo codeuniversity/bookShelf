@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShelf</title>
+</head>
+<body>
+    
+    <form onsubmit="return false;">
+        <input placeholder="Give me your name" type="text" id="user-input-name">
+        <input placeholder="And your last name as well" type="text" id="user-input-lastname">
+        <input placeholder="Let us send you ads" type="text" id="user-input-email">
+        <input placeholder="Give me a fancy password" type="password" id="user-input-password">        
+        <button onclick="getRegister()">send</button>
+    </form>
+
+
+
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="getDatabase.js"></script>
+<script type="text/javascript" src="globalFunctions.js"></script>
+<script type="text/javascript" src="postUser.js"></script>
+<script type="text/javascript" src="postBooks.js"></script>
+
+</html>
+
