@@ -25,6 +25,7 @@ function getLogin() {
 }
 
 
+
 function getRegister() {
     
     userInputName = document.getElementById('user-input-name').value;

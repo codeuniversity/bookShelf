@@ -11,6 +11,8 @@ function login(userInputEmail, userInputPassword) {
                 userInputName = databaseUsers[userCount].first_name;
                 userInputLastName = databaseUsers[userCount].last_name;
                 userID = databaseUsers[userCount]._id.$oid;
+                passwordCheck = true;
+                break;
             
             } else if (userInputEmail === databaseUsers[userCount].email) {
                 console.log(`Sry wrong password`); 
